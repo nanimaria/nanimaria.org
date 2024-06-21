@@ -312,7 +312,7 @@ body {
     position: relative;
     padding-left: 20px;
 }
-.about_founder_screen ul li::before,.experience_screen ul li::before{
+.about_founder_screen ul li::before,.experience_screen ul li::before,.marquee .marquee-content p::before{
     position: absolute;
     content: '\f0a3';
     top: 5px;
@@ -593,10 +593,99 @@ hr{
     height: 30px;
 }
    */
+.thanks_card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+.thanksStikcer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2;
+    transition: 0.35s ease-in;
+}
+.thanks_card:hover .thanksStikcer{
+    opacity: 0.6;
+}
+.thanks_card_ribbon{
+    margin-top: 10px;
+    background-color: var(--color-green);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.thanks_card h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-red);
+}
 @keyframes scaleAnimation {
     0% { transform: scale(0.7); }
     100% { transform: scale(0.9); }
   }
+  .marquee {
+    height: 200px; /* Set the height of the container */
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .marquee-content {
+    display: inline-block;
+    padding-top: 100%; /* Start the content outside the view */
+    animation: marquee 60s linear infinite;
+  }
+
+  .marquee:hover .marquee-content {
+    animation-play-state: paused;
+  }
+  .marquee .marquee-content p{
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  /* @keyframes marquee {
+    0%   { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+  } */
+  @keyframes marquee {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  .Y_floating{
+    -webkit-animation-name: floating;
+    animation-name: floating;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  @-webkit-keyframes floating {
+    from {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+    }
+    65% {
+        -webkit-transform: translate(0, 15px);
+        transform: translate(0, 15px);
+    }
+    to {
+        -webkit-transform: translate(0, -0px);
+        transform: translate(0, -0px);
+    }
+}
+
 /* Need to be removed later */
 /* .notification_parent{
     position: fixed;
