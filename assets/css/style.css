@@ -823,6 +823,9 @@ body{
     .owl-1 .items img{
         height: 400px;
     }
+    .col-xs-12.col-sm-12.col-md-12.mt-2.mt-sm-2.text-center.d-flex.justify-content-between{
+       flex-direction: column !important;
+    }
 }
 @media only screen and (min-width: 992px) {
     .animate {
