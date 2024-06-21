@@ -707,6 +707,10 @@ hr{
 .school_table_head-homeTwo th{
     color: #ffffff;
 }
+.less-opacity{
+    opacity: 0.4;
+    font-size: 15px;
+}
 /* Need to be removed later */
 /* .notification_parent{
     position: fixed;
