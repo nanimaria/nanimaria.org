@@ -23,3 +23,9 @@ $(document).ready(function(){
     "<i class='fa fa-angle-right' ></i>"]
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var yearSpan = document.getElementById('copyright-year');
+  var currentYear = new Date().getFullYear();
+  yearSpan.textContent = currentYear;
+});

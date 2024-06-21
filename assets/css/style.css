@@ -559,6 +559,44 @@ hr{
     width: 100%;
     opacity: 0.1;
 }
+.contactLink{
+    color: var(--black-primary);
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.35s ease-in;
+}
+.contactLink:hover{
+    color: var(--color-green);
+    text-decoration: none;
+}
+
+.contactIconOuter{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid var(--color-green);
+    transition: 0.35s ease-in;
+}
+.contactLink:hover .contactIconOuter{
+    border: 1px solid var(--color-green);
+}
+.contactIcon{
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-green);
+    border-radius: 50%;
+    animation: scaleAnimation 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite alternate;
+}
+/* .contactLink:hover .contactIcon{
+    width: 30px;
+    height: 30px;
+}
+   */
+@keyframes scaleAnimation {
+    0% { transform: scale(0.7); }
+    100% { transform: scale(0.9); }
+  }
 /* Need to be removed later */
 /* .notification_parent{
     position: fixed;
