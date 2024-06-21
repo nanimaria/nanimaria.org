@@ -685,7 +685,28 @@ hr{
         transform: translate(0, -0px);
     }
 }
-
+.school_table-responsive{
+    height: 400px;
+}
+.table thead.school_table_head-home th{
+    font-size: 14px;
+}
+.school_table_head-home{
+    background-color: transparent !important;
+}
+.school_table_head-homeOne{
+    background-color: var(--black-primary);
+}
+.school_table_head-homeOne th{
+    color: #fff;
+    font-size: 16px !important;
+}
+.school_table_head-homeTwo{
+    background-color: var(--color-primary);
+}
+.school_table_head-homeTwo th{
+    color: #ffffff;
+}
 /* Need to be removed later */
 /* .notification_parent{
     position: fixed;
