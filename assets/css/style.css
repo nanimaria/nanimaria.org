@@ -228,8 +228,9 @@ body {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     padding: 30px;
 }
-.details_box .row h5 {
+.details_box .row h5,.details_box .row h2 {
     font-size: 18px;
+
 }
 .landing_screen-about h3{
     color: #ffffff;
@@ -737,6 +738,31 @@ hr{
     height: 100%;
   object-fit: cover;
   border-radius: 50%;
+}
+.page_link a{
+    color: var(--black-primary);
+}
+.page_link:hover a,.mail_logo:hover{
+    text-decoration: none;
+    color: var(--black-primary);
+}
+.mail_logo{
+    font-size: 14px;
+    color: var(--black-primary);
+    word-wrap: break-word;
+    white-space: normal;
+}
+address{
+    font-size: 14px;
+}
+.link_card{
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 300px;
+    margin-top: 30px;
+}
+.link_card h6{
+    text-align: center;
 }
 /* Need to be removed later */
 /* .notification_parent{
