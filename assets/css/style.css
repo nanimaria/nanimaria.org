@@ -722,7 +722,7 @@ hr{
   margin-top: 30px;
   margin-bottom: 20px;
 }
-.imgBox::before{
+/* .imgBox::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -732,7 +732,7 @@ hr{
     right: -8px;
     z-index: -1;
     border-radius: 50%;
-}
+} */
 .imgBox img{
     width: 100%;
     height: 100%;
