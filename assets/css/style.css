@@ -158,6 +158,9 @@ body {
 .top_header.active-bg .navbar .navbar-brand img{
     width: 135px;
 }
+.donate_img{
+    transform: translateY(-6px);
+}
 .navBtn,.btn-common{
     background-color: var(--color-green);
     border-radius: 0;
@@ -795,6 +798,20 @@ footer .contactLink{
 }
 footer.bg-light{
     background-color: var(--black-primary) !important;
+}
+.imgBox2{
+    position: relative;
+    overflow: hidden;
+}
+.imgBox2::before{
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(155, 61, 66, 0.8); /* 50% transparency */
+    top: -50px;
+    left: -50px;
 }
 /* Need to be removed later */
 /* .notification_parent{
