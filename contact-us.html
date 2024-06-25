@@ -24,6 +24,7 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     .top_header {
       background-color: rgba(0.4, 0.4, 0.5, 0.4);
@@ -98,7 +99,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Contact Us</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1500">Contact Us</h1>
                 </div>
             </div>
         </div>
@@ -107,13 +108,13 @@
         <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <div class="sec_titles sec_titles-head mb-4 text-center">
+                <div class="sec_titles sec_titles-head mb-4 text-center" data-aos="fade-up" data-aos-duration="3000">
                   <img src="./assets/images/operator.png" alt="img" class="Y_floating">
                   <h3 class="italic">Contact Us</h3>
                 </div>
               </div>
               <div class="col-md-3">
-                  <div class="link_card d-flex justify-content-center align-items-center w-100">
+                  <div class="link_card d-flex justify-content-center align-items-center w-100" data-aos="fade-up" data-aos-duration="2000">
                    <div>
                     <h6>One Stop Center </h6>
                     <a href="tel:+9199166 31148" class="contactLink text-center d-flex justify-content-center align-items-center">
@@ -127,7 +128,7 @@
                 </a>
               </div>
               <div class="col-md-3">
-                <div class="link_card d-flex justify-content-center align-items-center w-100">
+                <div class="link_card d-flex justify-content-center align-items-center w-100" data-aos="fade-up" data-aos-duration="3000">
                  <div>
                   <h6>SAA (Specialised Adoption Agency) </h6>
                   <a href="tel:+9196121 17652" class="contactLink text-center d-flex justify-content-center align-items-center">
@@ -141,7 +142,7 @@
                  </a>
               </div>
               <div class="col-md-3">
-                <div class="link_card d-flex justify-content-center align-items-center w-100">
+                <div class="link_card d-flex justify-content-center align-items-center w-100" data-aos="fade-up" data-aos-duration="3500">
                  <div>
                   <h6>Children's Home  </h6>
                   <a href="tel:+9160090 54245" class="contactLink text-center d-flex justify-content-center align-items-center">
@@ -155,7 +156,7 @@
                  </a>
               </div>
               <div class="col-md-3">
-                <div class="link_card d-flex justify-content-center align-items-center w-100">
+                <div class="link_card d-flex justify-content-center align-items-center w-100" data-aos="fade-up" data-aos-duration="3700">
                  <div>
                   <h6>Nani Maria Kinder Garten School </h6>
                   <a href="tel:+9189747 55860" class="contactLink text-center d-flex justify-content-center align-items-center">
@@ -171,14 +172,14 @@
             </div>
             <div class="row mt-5">
               <div class="col-md-12 mx-auto mt-5">
-                <div>
+                <div data-aos="fade-up" data-aos-duration="3000">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3518.456428843319!2d95.84036967548259!3d28.13259027594144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDA3JzU3LjMiTiA5NcKwNTAnMzQuNiJF!5e0!3m2!1sen!2sin!4v1719061803617!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
             </div>
             <div class="row mt-5">
               <div class="col-md-7 mx-auto mt-5">
-                  <div class="details_box">
+                  <div class="details_box" data-aos="fade-up" data-aos-duration="3000">
                       <div class="row">
                           <div class="col-md-12">
                             <div class="">
@@ -195,9 +196,7 @@
                                  <img src="./assets/images/gmail.png" alt="gmail" width="22" class="d-inline mr-2"> nanimariasocietyroing@gmail.com
                                </a>
                             </div>
-                              <h2 class="mb-3">
-                                  Contact Us
-                              </h2>
+                              
                             
                           </div>
                            
@@ -333,6 +332,10 @@
   <script>
      baguetteBox.run('.tz-gallery');
   </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
 </body>
 
 </html>

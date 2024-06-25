@@ -25,6 +25,7 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     .top_header {
       background-color: rgba(0.4, 0.4, 0.5, 0.4);
@@ -97,14 +98,14 @@
     <section class="landing_screen landing_screen-about landing_screen-about--gallery d-flex justify-content-center align-items-md-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12" data-aos="fade-up" data-aos-duration="3000">
             <h1>Our Photo Gallery</h1>
           </div>
         </div>
       </div>
     </section>
     <section class="pb-5">
-        <div class="galler_home_grid tz-gallery">
+        <div class="galler_home_grid tz-gallery" data-aos="fade-up" data-aos-duration="3000">
             <div class="items">
               <a href="./assets/images/g1.jpg" class="lightbox">
                 <img src="./assets/images/g1.jpg" alt="img">
@@ -474,6 +475,10 @@
   <script>
      baguetteBox.run('.tz-gallery');
   </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
 </body>
 
 </html>

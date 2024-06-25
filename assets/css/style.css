@@ -429,6 +429,9 @@ address h3{
 address p{
     margin-bottom: 5px;
 }
+footer address p{
+    color: #ffffff;
+}
 .italic{
     font-style: italic;
 }
@@ -522,6 +525,7 @@ address p{
 .footer_para{
     font-size: 13px;
     margin-top: 20px;
+    color: #fff;
 }
 footer h5{
     margin-bottom: 18px;
@@ -533,7 +537,7 @@ footer h5{
     margin-bottom: 12px;
 }
 .quick-links a{
-    color: var(--black-primary);
+    color: #fff;
     margin-bottom: 12px;
     transition: 0.35s ease-in;
 }
@@ -556,7 +560,7 @@ footer h5{
     transform: scale(1.1);
 }
 hr{
-    border-top: 1px solid black;
+    border-top: 1px solid #fff;
     width: 100%;
     opacity: 0.1;
 }
@@ -740,17 +744,23 @@ hr{
   border-radius: 50%;
 }
 .page_link a{
-    color: var(--black-primary);
+    color: #fff;
 }
 .page_link:hover a,.mail_logo:hover{
     text-decoration: none;
-    color: var(--black-primary);
+    color: var(--color-green);
 }
 .mail_logo{
     font-size: 14px;
     color: var(--black-primary);
     word-wrap: break-word;
     white-space: normal;
+}
+footer .mail_logo{
+    color: #fff;
+}
+footer p{
+    color: #fff;
 }
 address{
     font-size: 14px;
@@ -767,6 +777,9 @@ address{
 .contactLink{
     font-size: 14px;
 }
+footer .contactLink{
+    color: #fff;
+}
 .link_card .contactLink{
     font-size: 18px !important;
 }
@@ -779,6 +792,9 @@ address{
 .page_link{
     font-size: 16px;
     font-weight: normal;
+}
+footer.bg-light{
+    background-color: var(--black-primary) !important;
 }
 /* Need to be removed later */
 /* .notification_parent{
